@@ -1,6 +1,15 @@
 // Créer une fonction appelée getComputerChoice qui renverra au hasard soit 'Pierre', 'Papier' ou 'Ciseaux'.
 // Nous utiliserons cette fonction dans le jeu pour retourner le choix de l'ordinateur
 console.log("hello");
+
+const choices = ["pierre", "papier", "ciseaux"];
+
+function getComputerChoice() {
+  return choices[Math.floor(Math.random() * choices.length)];
+}
+
+console.log(getComputerChoice());
+
 // Écrire une fonction qui joue un seul tour de Pierre Papier Ciseaux. La fonction doit prendre deux paramètres - playerSelection et computerSelection - puis renvoyer une chaîne qui déclare le vainqueur du tour comme suit : "Vous avez perdu! Le papier bat la pierre"
 
 // Rendre le paramètre playerSelection de la fonction insensible à la casse (afin que les utilisateurs puissent saisir pierre, pIERRE, pirrE ou toute autre variante).
